@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBD3FF"
+    tools:context=".Poisk">
+
+    <TextView
+        android:id="@+id/password_user_poisk"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LastName_poisk" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:text="Пароль"
+        app:layout_constraintEnd_toStartOf="@+id/password_user_poisk"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/back_poisk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D4F3FF"
+        android:text="Назад"
+        android:textColor="#4C4C4C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_poisk" />
+
+    <TextView
+        android:id="@+id/LastName_poisk"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirstName_poisk" />
+
+    <TextView
+        android:id="@+id/login_user_poisk"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LastName_poisk" />
+
+    <TextView
+        android:id="@+id/UserID_poisk"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="184dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FirstName_poisk"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserID_poisk" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="45dp"
+        android:text="id"
+        app:layout_constraintEnd_toStartOf="@+id/UserID_poisk"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:text="Фамилия"
+        app:layout_constraintEnd_toStartOf="@+id/FirstName_poisk"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="196dp"
+        android:text="Имя"
+        app:layout_constraintEnd_toEndOf="@+id/LastName_poisk"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:text="Логин"
+        app:layout_constraintEnd_toStartOf="@id/login_user_poisk"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/image_poisk"
+        android:layout_width="225dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/no_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/update_poisk"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#D4F3FF"
+        android:onClick="GetTextFromSql"
+        android:text="Поиск"
+        android:textColor="#4C4C4C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Stroka_Poiska" />
+
+    <EditText
+        android:id="@+id/Stroka_Poiska"
+        android:layout_width="278dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Введите фамилию"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_user_poisk" />
+</androidx.constraintlayout.widget.ConstraintLayout>
